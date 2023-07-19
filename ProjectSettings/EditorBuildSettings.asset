@@ -14,9 +14,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/IceCream.unity
     guid: 2be12306af128754bb9b91e52e5a71f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InteractiveFilter.unity
     guid: f0ef51d87f9060343a64e892f1d51a11
+  - enabled: 1
+    path: Assets/Under Water Filter Face Scene/Scenes/Under Water Filter Face Scene.unity
+    guid: a5f951cd67c8e7940800c2ca9dda8f5c
+  - enabled: 0
+    path: Assets/Under Water Filter Face Scene/Scenes/Fish Boids Danger.unity
+    guid: 89f88673c37180240803a632e01c3598
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}
