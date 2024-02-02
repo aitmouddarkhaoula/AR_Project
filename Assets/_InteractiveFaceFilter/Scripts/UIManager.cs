@@ -42,9 +42,9 @@ public class UIManager : MonoBehaviour
         catButton.onClick.AddListener(() => ChangeGlasses(GlassesType.cat));
         normalButton.onClick.AddListener(() => ChangeGlasses(GlassesType.normal));
         starsButton.onClick.AddListener(() => ChangeGlasses(GlassesType.stars));
-        blueButton.onClick.AddListener(()=>ChangeColor(GlassesColors.blue));
-        blackButton.onClick.AddListener(()=>ChangeColor(GlassesColors.black));
-        greenButton.onClick.AddListener(()=>ChangeColor(GlassesColors.green));
+        blueButton.onClick.AddListener(() => ChangeColor(GlassesColors.blue));
+        blackButton.onClick.AddListener(() => ChangeColor(GlassesColors.black));
+        greenButton.onClick.AddListener(() => ChangeColor(GlassesColors.green));
         catG = glassesManager.cat;
         normalG = glassesManager.normal;
         starsG = glassesManager.stars;
@@ -65,10 +65,11 @@ public class UIManager : MonoBehaviour
             : glassesColors == GlassesColors.black
                 ? Color.black
                 : Color.green;
-        currentColor = glassesColors == GlassesColors.blue? Color.blue : glassesColors == GlassesColors.black ? Color.black : Color.green;
+        currentColor = glassesColors == GlassesColors.blue ? Color.blue :
+            glassesColors == GlassesColors.black ? Color.black : Color.green;
     }
 
-   
+
     public void ReloadCurrentGlasses()
     {
         currentGlass.GetComponent<MeshRenderer>().enabled = true;
@@ -78,6 +79,5 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
